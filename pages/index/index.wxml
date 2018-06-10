@@ -1,0 +1,44 @@
+<view class='box'>
+    <image class='page_bg' src='/images/bg.png' mode='aspectFill'></image>
+    <image class="index_banner" src="/images/banner.png" mode="aspectFit"></image>
+    <view class='index_state' bindtap="tapState">?</view>
+    <button class='index_start main_btn' data-item="start" bindtap='tapStart'>开始出题</button>
+    <button class='index_btn second_btn' data-item="out" bindtap='tapOutRecord'>出题记录</button>
+    <button class='index_btn second_btn' data-item="over" bindtap='tapOverRecord'>答题记录</button>
+    <button class='index_btn second_btn' data-item="detail" bindtap='tapDetail'>付费详情</button>
+</view>
+<!-- 客服 -->
+<button open-type="contact" class='contact_btn'>
+    <text>联系客服</text>
+</button>
+<!-- 弹框 -->
+<!-- 玩法介绍 -->
+<view class='introduce {{isState?"show":""}}'>
+    <view class='introduce_bg'></view>
+    <view class='introduce_box'>
+        <view class='introduce_title'>
+            <text>玩法介绍</text>
+            <view class='introduce_shut' bindtap='tapHideState'>
+                <image src='/images/btn_close.png' mode='aspectFill'></image>
+            </view>
+        </view>
+        <view class='introduce_content'>从题库中随机选择10道题，并勾选出最适合自己的答案，出完后分享给好友作答，看好友能否答对你的正确选项，测试你和好友间的默契值</view>
+    </view>
+</view>
+<!-- 弹框-登录提示 -->
+<view class='login {{isLogin?"show":""}}'>
+    <view class='bg'></view>
+    <view class='login_box'>
+        <view class='shut' bindtap='hideLogin'>
+            <image class='shut_icon' src='/images/icon_shut.png' mode='aspectFill'></image>
+        </view>
+        <view class='login_head'>
+            <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <view class='login_name'>
+            <open-data type="userNickName"></open-data>
+        </view>
+        <view class='login_desc'>为了给您更好的服务请先登录</view>
+        <button class='main_btn login_btn' open-type="getUserInfo" bindgetuserinfo="ongetuserinfo">登录</button>
+    </view>
+</view>

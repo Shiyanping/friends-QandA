@@ -1,0 +1,38 @@
+<!-- 付费详情 -->
+<view class='detail'>
+    <image class='detail_bg' src='/images/bg.png' mode='aspectFill'></image>
+    <view class='detail_box'>
+        <view class='detail_title'>亲爱的用户，您好：</view>
+        <view class='detail_con'>
+            <view>对应功能在付款后即可自动开启使用（不开启这些功能不影响本款小程序的正常使用哒），所有功能暂不支持退款。特此说明。感谢您对我们的理解和支持！</view>
+            <view>温馨提示：</view>
+            <view>由用户反应说，在付款页面点击退出时，不小心点到指纹支付上，所以不小心付钱了。由于我们暂不支持退款，因此小伙伴们如果不想购买以上功能，在关闭支付页面时要看清楚再点呦。</view>
+        </view>
+        <view class='detail_title'>亲爱的用户，您好：</view>
+        <view class='detail_con'>
+            <view class='detail_content'>
+                <view class='detail_num'>1.</view>
+                <view class='detail_info'>偷看好友问题的正确答案。单价：1元</view>
+            </view>
+            <view class='detail_content'>
+                <view class='detail_num'>2.</view>
+                <view class='detail_info'>
+                    <view>查看哪位好友回答了问题。</view>
+                    <view>查看制定好友单价：0.5元</view>
+                    <view>查看一套题目所有好友单价：2元</view>
+                </view>
+            </view>
+            <view class='detail_content'>
+                <view class='detail_num'>3.</view>
+                <view class='detail_info'>
+                    <view>增加一次回答好友问题的机会。</view>
+                    <view>单价：0.5元／分享一次</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 客服 -->
+    <button open-type="contact" class='contact_btn'>
+        <image src='/images/customer.png' mode='aspectFill'></image>
+    </button>
+</view>

@@ -1,0 +1,15 @@
+/* 内容 */
+.lp{text-align:left;padding:48rpx 60rpx;position:fixed;top:0;left:0;right:0;bottom:168rpx;overflow:auto;-webkit-overflow-scrolling: touch;}
+.lp_box{background: rgba(207,169,240,0.17);border-radius:20rpx;}
+.lp_box+.lp_box{margin-top:30rpx;}
+.lp_title{font-size:32rpx;border-bottom:solid 1px rgba(255,255,255,.2);padding:32rpx;}
+.lp_con{font-size:28rpx;padding:32rpx;position:relative;padding-left:84rpx;}
+.lp_icon{width:30rpx;height:30rpx;border:solid 2rpx #fff;background: #9013FE;border-radius:50%;position:absolute;top:36rpx;left:32rpx;}
+/* .lp_text{} */
+/* 按钮 */
+.lp_btn{background: rgba(144,19,254,0.10);padding:30rpx 116rpx;position:fixed;left:0;bottom:0;right:0;}
+/* .lp_btn_text{} */
+/* 空 */
+.lp_empty{padding:0 120rpx;position:fixed;top:40%;left:0;right:0;transform:translateY(-50%);}
+.lp_empty_text{font-size:28rpx;color: rgba(255,255,255,0.70);}
+.lp_empty_btn{margin-top:36rpx;}

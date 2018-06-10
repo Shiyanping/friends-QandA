@@ -1,0 +1,27 @@
+page{background:#fff;}
+/* canvas模式 */
+canvas{width:750rpx;height:750rpx;}
+.canvas_img{width:750rpx;height:750rpx;}
+/* btn */
+.share_btn{margin:0 120rpx;}
+.share_btn+.share_btn{margin-top:40rpx;}
+.share_look{font-size: 16px;padding:40rpx 0;margin:0 120rpx;position:relative;color:#323232;}
+.share_look::before{content:'查看答题情况';border-bottom:solid 3rpx #323232;}
+/* 保存成功图片弹框 */
+.success{display:none;}
+.success_bg{background: rgba(0,0,0,0.75);position:fixed;top:0;right:0;bottom:0;left:0;z-index: 998;}
+.success_box{background: #FFFFFF;border-radius:20rpx;position:fixed;left:76rpx;right:76rpx;z-index: 999;top:50%;transform:translateY(-50%);padding:76rpx 48rpx 48rpx;box-sizing:border-box;}
+.success_shut{overflow:hidden;position:absolute;top:0;right:0;padding:24rpx;}
+.success_icon{width:40rpx;height:40rpx;float:left;margin:0;}
+.success_title{font-size: 16px;color: #323232;line-height:1.5;}
+.success_btn{border-radius:108rpx;box-shadow: 0 2px 4px 0 rgba(144,19,254,0.35);margin-top:44rpx;}
+/* 分享成功 */
+.share_success{display:none;background-image: linear-gradient(to bottom, #8800FF 0%, #7459F6 100%);box-shadow: 0 2px 8px 0 rgba(0,0,0,0.50);border-radius: 10px;height:100rpx;line-height:100rpx;text-align:center;position:fixed;top:752rpx;left:50%;transform:translateX(-50%);padding:0 40rpx;z-index: 999;}
+.share_success_icon{width:60rpx;height:60rpx;position:absolute;top:20rpx;left:32rpx;}
+.share_success_text{font-size: 18px;color: #FFFFFF;padding-left:80rpx;white-space:nowrap;}
+/* 新版 */
+.outover{display:flex;flex-direction: column;align-items: center;height:750rpx;}
+.outover_title{width:600rpx;height:142rpx;margin-top:40rpx;}
+.outover_head{width:134rpx;height:134rpx;border-radius:50%;margin-top:141rpx;overflow:hidden;}
+/* 显示 */
+.show{display:block;}

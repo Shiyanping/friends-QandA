@@ -1,0 +1,23 @@
+<image class='page_bg' src='/images/bg.png' mode='aspectFill'></image>
+<!-- 非空 -->
+<view wx:if="{{list.length>0}}">
+    <!-- 内容 -->
+    <view class='lp'>
+        <view class='lp_box' wx:for="{{list}}" wx:key="{{index}}">
+            <view class='lp_title'>{{index+1}}/10:{{item.question}}</view>
+            <view class='lp_con'>
+                <view class='lp_icon'></view>
+                <view class='lp_text' wx:for="{{item.answer}}" wx:for-index="idx" wx:for-item="itemName" wx:if="{{itemName.is_right==1}}" wx:key="{{idx}}">{{itemName.value}}</view>
+            </view>
+        </view>
+    </view>
+    <!-- 按钮 -->
+    <view class='lp_btn'>
+        <view class='lp_btn_text main_btn' bindtap='mainBtn'>当前题目再发一次</view>
+    </view>
+</view>
+<!-- 空 -->
+<view class='lp_empty' wx:else>
+    <view class='lp_empty_text'>您还没有出过题哦～</view>
+    <view class='lp_empty_btn main_btn'>马上去出题</view>
+</view>

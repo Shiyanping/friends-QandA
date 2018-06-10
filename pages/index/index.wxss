@@ -1,0 +1,25 @@
+.box{padding-bottom:162rpx;}
+.index_banner{width:528rpx;height:278rpx;margin:48rpx auto 0;}
+.index_state{width:50rpx;height:50rpx;text-align:center;line-height:50rpx;background-image: linear-gradient(to right, #7D77E2, #986FDA);color:#fff;font-size:36rpx;position:fixed;top:48rpx;right:30rpx;border-radius:50%;}
+.index_start{margin:50rpx 120rpx 0;}
+.index_btn{margin:0 120rpx;margin-top:40rpx;}
+/* 玩法介绍 */
+.introduce{display:none;}
+.introduce_bg{background: rgba(0,0,0,0.75);position:fixed;top:0;right:0;bottom:0;left:0;z-index:998;}
+.introduce_box{background: #FFFFFF;border-radius: 20rpx;position:fixed;top:240rpx;left:120rpx;right:120rpx;z-index: 999;overflow:hidden;}
+.introduce_title{background: #9013FE;height:104rpx;line-height:104rpx;text-align:center;font-size:36rpx;color:#fff;position:relative;}
+.introduce_shut{position:absolute;top:0;right:0;bottom:0;padding:0 30rpx;overflow:hidden;}
+.introduce_shut image{width:40rpx;height:40rpx;float:left;margin:32rpx auto;}
+.introduce_content{font-size: 28rpx;color: #323232;line-height:1.8;padding:40rpx 30rpx 112rpx;text-align:justify;}
+/* 弹框-登录 */
+.login{display:none;}
+.login_box{background: #FFFFFF;z-index: 999;position:fixed;top:50%;left:76rpx;right:76rpx;transform:translateY(-50%);border-radius:20rpx;padding-bottom:54rpx;}
+.login_head{width:180rpx;height:180rpx;border-radius:50%;box-shadow: 0 0 0 6rpx #fff;margin:0 auto;margin-top:-90rpx;overflow:hidden;}
+.login_name{font-size:40rpx;color: #323232;padding:18rpx 0;}
+.login_desc{font-size:32rpx;color: #8E8E8E;padding-bottom:50rpx;}
+.login_btn{border-radius:108rpx;margin:0 64rpx;}
+/* 客服 */
+.contact_btn{color: #FFFFFF;font-size:32rpx;height:108rpx;line-height:108rpx;position:fixed;left:120rpx;right:120rpx;bottom:54rpx;background:transparent;}
+.contact_btn text{border-bottom:solid 1px #fff;}
+/* show */
+.show{display:block;}

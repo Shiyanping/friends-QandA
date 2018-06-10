@@ -1,0 +1,1005 @@
+const arr = [{
+	"subjectId": "2",
+	"author": "",
+	"question": "人生三大事后感觉没发挥好的事件，我认为最扎心的是？",
+	"answer": [{
+		"value": "参加考试",
+		"is_right": "0",
+		"id": "5"
+	}, {
+		"value": "和别人撕逼",
+		"is_right": "0",
+		"id": "6"
+	}, {
+		"value": "和喜欢的人聊天",
+		"is_right": "0",
+		"id": "7"
+	}, {
+		"value": "这些我都不care的啦",
+		"is_right": "0",
+		"id": "8"
+	}]
+}, {
+	"subjectId": "3",
+	"author": "",
+	"question": "微信里不受欢迎的行为中，我最不喜欢的是？",
+	"answer": [{
+		"value": "动不动就发60秒超长语音",
+		"is_right": "0",
+		"id": "9"
+	}, {
+		"value": "频繁更换微信头像和名字",
+		"is_right": "0",
+		"id": "10"
+	}, {
+		"value": "群发投票、祝福等消息",
+		"is_right": "0",
+		"id": "11"
+	}, {
+		"value": "红包从来只抢不发",
+		"is_right": "0",
+		"id": "12"
+	}]
+}, {
+	"subjectId": "5",
+	"author": "",
+	"question": "当我的青蛙不回家时，我会认为它？",
+	"answer": [{
+		"value": "变成了红烧田鸡",
+		"is_right": "0",
+		"id": "17"
+	}, {
+		"value": "遇到了石原里美",
+		"is_right": "0",
+		"id": "18"
+	}, {
+		"value": "干粮不够，晕倒在路边",
+		"is_right": "0",
+		"id": "19"
+	}, {
+		"value": "管他的，崽带回稀有明信片就行",
+		"is_right": "0",
+		"id": "20"
+	}]
+}, {
+	"subjectId": "6",
+	"author": "",
+	"question": "我认为自己是个很污的人吗？",
+	"answer": [{
+		"value": "老司机带带我，我是白莲花",
+		"is_right": "0",
+		"id": "21"
+	}, {
+		"value": "污力滔滔的污妖王本尊无疑了",
+		"is_right": "0",
+		"id": "22"
+	}, {
+		"value": "偶尔污一点才是小可爱嘛",
+		"is_right": "0",
+		"id": "23"
+	}]
+}, {
+	"subjectId": "7",
+	"author": "",
+	"question": "以下哪句话最能撩到我？",
+	"answer": [{
+		"value": "“如果你前任和现任同时掉水里，我能做你男/女朋友吗？”",
+		"is_right": "0",
+		"id": "24"
+	}, {
+		"value": "“可以帮我洗个东西吗？”“洗什么？”“喜欢我。”",
+		"is_right": "0",
+		"id": "25"
+	}, {
+		"value": "“最近有谣言说我喜欢你，我要澄清一下，这不是谣言。”",
+		"is_right": "0",
+		"id": "26"
+	}, {
+		"value": "“我想你应该很忙吧，那就只看前三个字就好啦！”",
+		"is_right": "0",
+		"id": "27"
+	}]
+}, {
+	"subjectId": "8",
+	"author": "",
+	"question": "如果我有哆啦A梦的神奇口袋，我最想拥有？",
+	"answer": [{
+		"value": "想去哪儿就去哪儿的任意门",
+		"is_right": "0",
+		"id": "28"
+	}, {
+		"value": "能穿梭过去和未来的时光机",
+		"is_right": "0",
+		"id": "29"
+	}, {
+		"value": "吃下就能记住的记忆面包",
+		"is_right": "0",
+		"id": "30"
+	}, {
+		"value": "可以随时飞起来的竹蜻蜓",
+		"is_right": "0",
+		"id": "31"
+	}]
+}, {
+	"subjectId": "9",
+	"author": "",
+	"question": "以下情况最令我抓狂的是？",
+	"answer": [{
+		"value": "没有WiFi",
+		"is_right": "0",
+		"id": "32"
+	}, {
+		"value": "手机电量不足",
+		"is_right": "0",
+		"id": "33"
+	}, {
+		"value": "打开网页一直加载",
+		"is_right": "0",
+		"id": "34"
+	}, {
+		"value": "都很抓狂",
+		"is_right": "0",
+		"id": "35"
+	}]
+}, {
+	"subjectId": "10",
+	"author": "",
+	"question": "我最不喜欢在以下哪个场合和别人聊天？",
+	"answer": [{
+		"value": "高峰地铁上，离得很近依然要彼此吆喝",
+		"is_right": "0",
+		"id": "36"
+	}, {
+		"value": "电梯里唠嗑，旁边陌生人都能听见",
+		"is_right": "0",
+		"id": "37"
+	}, {
+		"value": "公司洗手间/走廊碰到不熟的同事",
+		"is_right": "0",
+		"id": "38"
+	}, {
+		"value": "理发时遇到很健谈的Tony老师",
+		"is_right": "0",
+		"id": "39"
+	}]
+}, {
+	"subjectId": "11",
+	"author": "",
+	"question": "一句话证明我是吃货，我会选？",
+	"answer": [{
+		"value": "姐，遇到新东方厨师就嫁了吧！",
+		"is_right": "0",
+		"id": "40"
+	}, {
+		"value": "没什么是一顿火锅解决不了的，如果有，那就两顿！",
+		"is_right": "0",
+		"id": "41"
+	}, {
+		"value": "老祖宗说的好：识食物者为俊杰",
+		"is_right": "0",
+		"id": "42"
+	}, {
+		"value": "我这辈子，唯一拿得起放不下的，就属筷子了......",
+		"is_right": "0",
+		"id": "43"
+	}]
+}, {
+	"subjectId": "12",
+	"author": "",
+	"question": "每次听到我都忍不住想diss的是？",
+	"answer": [{
+		"value": "在吗",
+		"is_right": "0",
+		"id": "44"
+	}, {
+		"value": "有对象了吗",
+		"is_right": "0",
+		"id": "45"
+	}, {
+		"value": "一个月赚多少啊",
+		"is_right": "0",
+		"id": "46"
+	}, {
+		"value": "能给我包个红包吗",
+		"is_right": "0",
+		"id": "47"
+	}]
+}, {
+	"subjectId": "13",
+	"author": "",
+	"question": "以下哪个我最可能会尝试？",
+	"answer": [{
+		"value": "泸州老窖香水",
+		"is_right": "0",
+		"id": "48"
+	}, {
+		"value": "老干妈唇膏",
+		"is_right": "0",
+		"id": "49"
+	}, {
+		"value": "崂山白花蛇草水",
+		"is_right": "0",
+		"id": "50"
+	}, {
+		"value": "还是喝口82年雪碧压压惊吧",
+		"is_right": "0",
+		"id": "51"
+	}]
+}, {
+	"subjectId": "14",
+	"author": "",
+	"question": "我认为的最佳损友是啥样的？",
+	"answer": [{
+		"value": "谈钱从来不用绕弯子",
+		"is_right": "0",
+		"id": "52"
+	}, {
+		"value": "说话可以不必过脑子",
+		"is_right": "0",
+		"id": "53"
+	}, {
+		"value": "对TA生气不过5秒",
+		"is_right": "0",
+		"id": "54"
+	}, {
+		"value": "当面损，背面夸",
+		"is_right": "0",
+		"id": "55"
+	}]
+}, {
+	"subjectId": "15",
+	"author": "",
+	"question": "我最近喜欢什么宠物？",
+	"answer": [{
+		"value": "狗子",
+		"is_right": "0",
+		"id": "56"
+	}, {
+		"value": "猫子",
+		"is_right": "0",
+		"id": "57"
+	}, {
+		"value": "青蛙",
+		"is_right": "0",
+		"id": "58"
+	}, {
+		"value": "以上都没有",
+		"is_right": "0",
+		"id": "60"
+	}]
+}, {
+	"subjectId": "16",
+	"author": "",
+	"question": "我有过几段感情经历？",
+	"answer": [{
+		"value": "至今还是单身狗",
+		"is_right": "0",
+		"id": "61"
+	}, {
+		"value": "谈过1-3段感情",
+		"is_right": "0",
+		"id": "62"
+	}, {
+		"value": "老司机阅人无数",
+		"is_right": "0",
+		"id": "63"
+	}]
+}, {
+	"subjectId": "17",
+	"author": "",
+	"question": "我是哪种“吃鸡”队友？",
+	"answer": [{
+		"value": "吃鸡王：会动的都得死",
+		"is_right": "0",
+		"id": "64"
+	}, {
+		"value": "lyb：幻影坦克伏地魔",
+		"is_right": "0",
+		"id": "65"
+	}, {
+		"value": "千年老苟：活着就是希望",
+		"is_right": "0",
+		"id": "66"
+	}, {
+		"value": "盒子精：落地成盒，一气盒成",
+		"is_right": "0",
+		"id": "67"
+	}]
+}, {
+	"subjectId": "18",
+	"author": "",
+	"question": "作为一个有“仪式感”的人，我经常",
+	"answer": [{
+		"value": "干大事之前上个厕所",
+		"is_right": "0",
+		"id": "68"
+	}, {
+		"value": "吃饭前用相机给食物开光",
+		"is_right": "0",
+		"id": "69"
+	}, {
+		"value": "学习/工作前先拿出手机刷一会",
+		"is_right": "0",
+		"id": "70"
+	}]
+}, {
+	"subjectId": "19",
+	"author": "",
+	"question": "朋友圈里我更喜欢发布？",
+	"answer": [{
+		"value": "分享链接",
+		"is_right": "0",
+		"id": "71"
+	}, {
+		"value": "吃喝玩乐",
+		"is_right": "0",
+		"id": "72"
+	}, {
+		"value": "魔性自拍",
+		"is_right": "0",
+		"id": "73"
+	}]
+}, {
+	"subjectId": "20",
+	"author": "",
+	"question": "别人怼我一下，我会",
+	"answer": [{
+		"value": "怼ta十下",
+		"is_right": "0",
+		"id": "74"
+	}, {
+		"value": "蹲墙角默默画圈圈",
+		"is_right": "0",
+		"id": "75"
+	}, {
+		"value": "当然是和ta讲道理啊",
+		"is_right": "0",
+		"id": "76"
+	}]
+}, {
+	"subjectId": "21",
+	"author": "",
+	"question": "出门时，我是怎么锁门的？",
+	"answer": [{
+		"value": "从来不锁啊",
+		"is_right": "0",
+		"id": "77"
+	}, {
+		"value": "必须锁好再走",
+		"is_right": "0",
+		"id": "78"
+	}, {
+		"value": "想不起锁没锁，再回去检查一遍吧",
+		"is_right": "0",
+		"id": "79"
+	}]
+}, {
+	"subjectId": "23",
+	"author": "",
+	"question": "晚上我一般什么时候入睡？",
+	"answer": [{
+		"value": "困了的时候",
+		"is_right": "0",
+		"id": "84"
+	}, {
+		"value": "赢了这局游戏就睡",
+		"is_right": "0",
+		"id": "85"
+	}, {
+		"value": "不喜欢的人发来微信的时候",
+		"is_right": "0",
+		"id": "86"
+	}]
+}, {
+	"subjectId": "25",
+	"author": "",
+	"question": "吃火锅我会选择什么蘸料？",
+	"answer": [{
+		"value": "麻酱",
+		"is_right": "0",
+		"id": "90"
+	}, {
+		"value": "香油碟",
+		"is_right": "0",
+		"id": "91"
+	}, {
+		"value": "海鲜汁",
+		"is_right": "0",
+		"id": "92"
+	}, {
+		"value": "抖音网红蘸酱",
+		"is_right": "0",
+		"id": "93"
+	}]
+}, {
+	"subjectId": "26",
+	"author": "",
+	"question": "晚上睡觉我的睡前仪式是？",
+	"answer": [{
+		"value": "秋衣塞进秋裤里，秋裤塞进袜子里",
+		"is_right": "0",
+		"id": "94"
+	}, {
+		"value": "最后再去上一趟厕所",
+		"is_right": "0",
+		"id": "95"
+	}, {
+		"value": "再刷完一遍微信朋友圈",
+		"is_right": "0",
+		"id": "96"
+	}]
+}, {
+	"subjectId": "27",
+	"author": "",
+	"question": "走在路上看到井盖，我会",
+	"answer": [{
+		"value": "绕开井盖走",
+		"is_right": "0",
+		"id": "97"
+	}, {
+		"value": "直接踩过去",
+		"is_right": "0",
+		"id": "98"
+	}, {
+		"value": "跳一跳到井盖上加分",
+		"is_right": "0",
+		"id": "99"
+	}]
+}, {
+	"subjectId": "28",
+	"author": "",
+	"question": "微信删除和拉黑我觉得最狠的是？",
+	"answer": [{
+		"value": "删除",
+		"is_right": "0",
+		"id": "100"
+	}, {
+		"value": "拉黑",
+		"is_right": "0",
+		"id": "101"
+	}]
+}, {
+	"subjectId": "29",
+	"author": "",
+	"question": "我能分得清元宵和汤圆吗？",
+	"answer": [{
+		"value": "能",
+		"is_right": "0",
+		"id": "102"
+	}, {
+		"value": "不能",
+		"is_right": "0",
+		"id": "103"
+	}]
+}, {
+	"subjectId": "30",
+	"author": "",
+	"question": "起床闹铃响了，我会",
+	"answer": [{
+		"value": "鲤鱼打挺马上起床",
+		"is_right": "0",
+		"id": "104"
+	}, {
+		"value": "关掉闹钟再睡一会",
+		"is_right": "0",
+		"id": "105"
+	}]
+}, {
+	"subjectId": "31",
+	"author": "",
+	"question": "什么时候我会去剪头发？",
+	"answer": [{
+		"value": "头发长了",
+		"is_right": "0",
+		"id": "106"
+	}, {
+		"value": "失恋了",
+		"is_right": "0",
+		"id": "107"
+	}, {
+		"value": "正月里",
+		"is_right": "0",
+		"id": "108"
+	}]
+}, {
+	"subjectId": "32",
+	"author": "",
+	"question": "洗澡时听到不喜欢的音乐，我通常会",
+	"answer": [{
+		"value": "伸手关掉",
+		"is_right": "0",
+		"id": "109"
+	}, {
+		"value": "切换喜欢的歌",
+		"is_right": "0",
+		"id": "110"
+	}, {
+		"value": "算了，自己唱",
+		"is_right": "0",
+		"id": "111"
+	}]
+}, {
+	"subjectId": "33",
+	"author": "",
+	"question": "吃泡面我喜欢放",
+	"answer": [{
+		"value": "鸡蛋",
+		"is_right": "0",
+		"id": "112"
+	}, {
+		"value": "火腿",
+		"is_right": "0",
+		"id": "113"
+	}, {
+		"value": "青菜",
+		"is_right": "0",
+		"id": "114"
+	}, {
+		"value": "醋",
+		"is_right": "0",
+		"id": "115"
+	}]
+}, {
+	"subjectId": "34",
+	"author": "",
+	"question": "过年我还保留到现在的习惯是",
+	"answer": [{
+		"value": "看春晚",
+		"is_right": "0",
+		"id": "116"
+	}, {
+		"value": "放烟花",
+		"is_right": "0",
+		"id": "117"
+	}, {
+		"value": "吃吃吃",
+		"is_right": "0",
+		"id": "118"
+	}, {
+		"value": "抢红包",
+		"is_right": "0",
+		"id": "119"
+	}]
+}, {
+	"subjectId": "40",
+	"author": "",
+	"question": "我最想去以下哪个国家旅游？",
+	"answer": [{
+		"value": "土耳其",
+		"is_right": "0",
+		"id": "138"
+	}, {
+		"value": "日本",
+		"is_right": "0",
+		"id": "139"
+	}, {
+		"value": "泰国",
+		"is_right": "0",
+		"id": "140"
+	}, {
+		"value": "其他国家",
+		"is_right": "0",
+		"id": "141"
+	}]
+}, {
+	"subjectId": "41",
+	"author": "",
+	"question": "假期我会为自己安排旅游吗？",
+	"answer": [{
+		"value": "会",
+		"is_right": "0",
+		"id": "142"
+	}, {
+		"value": "不会",
+		"is_right": "0",
+		"id": "143"
+	}]
+}, {
+	"subjectId": "42",
+	"author": "",
+	"question": "如果有1000万我会？",
+	"answer": [{
+		"value": "环游世界",
+		"is_right": "0",
+		"id": "144"
+	}, {
+		"value": "买房买车",
+		"is_right": "0",
+		"id": "145"
+	}, {
+		"value": "给爸妈",
+		"is_right": "0",
+		"id": "146"
+	}, {
+		"value": "存起来理财",
+		"is_right": "0",
+		"id": "147"
+	}]
+}, {
+	"subjectId": "43",
+	"author": "",
+	"question": "买东西的时候我会讨价还价吗？",
+	"answer": [{
+		"value": "人家脸皮薄说不出口",
+		"is_right": "0",
+		"id": "148"
+	}, {
+		"value": "不还价还能算买东西吗",
+		"is_right": "0",
+		"id": "149"
+	}, {
+		"value": "看情况有时候会的",
+		"is_right": "0",
+		"id": "150"
+	}]
+}, {
+	"subjectId": "44",
+	"author": "",
+	"question": "以下愿望我最想实现的是",
+	"answer": [{
+		"value": "想买什么买什么",
+		"is_right": "0",
+		"id": "151"
+	}, {
+		"value": "亲朋好友健康快乐",
+		"is_right": "0",
+		"id": "152"
+	}, {
+		"value": "找到携手一生的人",
+		"is_right": "0",
+		"id": "153"
+	}, {
+		"value": "工作顺利升职加薪",
+		"is_right": "0",
+		"id": "154"
+	}]
+}, {
+	"subjectId": "45",
+	"author": "",
+	"question": "我喜欢几个人去旅行？",
+	"answer": [{
+		"value": "独自一人",
+		"is_right": "0",
+		"id": "155"
+	}, {
+		"value": "两人结伴",
+		"is_right": "0",
+		"id": "156"
+	}, {
+		"value": "三五好友",
+		"is_right": "0",
+		"id": "157"
+	}, {
+		"value": "途中随意找人结伴游",
+		"is_right": "0",
+		"id": "158"
+	}]
+}, {
+	"subjectId": "46",
+	"author": "",
+	"question": "我最看中什么感情？",
+	"answer": [{
+		"value": "亲情",
+		"is_right": "0",
+		"id": "159"
+	}, {
+		"value": "友情",
+		"is_right": "0",
+		"id": "160"
+	}, {
+		"value": "爱情",
+		"is_right": "0",
+		"id": "161"
+	}, {
+		"value": "都重要",
+		"is_right": "0",
+		"id": "162"
+	}]
+}, {
+	"subjectId": "47",
+	"author": "",
+	"question": "你觉得我狗不狗？",
+	"answer": [{
+		"value": "狗",
+		"is_right": "0",
+		"id": "163"
+	}, {
+		"value": "一点狗",
+		"is_right": "0",
+		"id": "164"
+	}, {
+		"value": "很狗",
+		"is_right": "0",
+		"id": "165"
+	}, {
+		"value": "不要侮辱狗",
+		"is_right": "0",
+		"id": "166"
+	}]
+}, {
+	"subjectId": "48",
+	"author": "",
+	"question": "我是否有前任？",
+	"answer": [{
+		"value": "有",
+		"is_right": "0",
+		"id": "167"
+	}, {
+		"value": "没有",
+		"is_right": "0",
+		"id": "168"
+	}, {
+		"value": "即将有",
+		"is_right": "0",
+		"id": "169"
+	}]
+}, {
+	"subjectId": "49",
+	"author": "",
+	"question": "我现在有喜欢的人吗？",
+	"answer": [{
+		"value": "有",
+		"is_right": "0",
+		"id": "170"
+	}, {
+		"value": "没有",
+		"is_right": "0",
+		"id": "171"
+	}]
+}, {
+	"subjectId": "50",
+	"author": "",
+	"question": "如果我跟你告白你会接受吗？",
+	"answer": [{
+		"value": "会",
+		"is_right": "0",
+		"id": "172"
+	}, {
+		"value": "不会",
+		"is_right": "0",
+		"id": "173"
+	}]
+}, {
+	"subjectId": "51",
+	"author": "",
+	"question": "我曾经暗恋过几个人？",
+	"answer": [{
+		"value": "没半个",
+		"is_right": "0",
+		"id": "174"
+	}, {
+		"value": "一个",
+		"is_right": "0",
+		"id": "175"
+	}, {
+		"value": "两个到五个",
+		"is_right": "0",
+		"id": "176"
+	}, {
+		"value": "五个以上",
+		"is_right": "0",
+		"id": "177"
+	}]
+}, {
+	"subjectId": "53",
+	"author": "",
+	"question": "我喜欢你吗？",
+	"answer": [{
+		"value": "很喜欢",
+		"is_right": "0",
+		"id": "182"
+	}, {
+		"value": "超喜欢",
+		"is_right": "0",
+		"id": "183"
+	}]
+}, {
+	"subjectId": "55",
+	"author": "",
+	"question": "遇见喜欢的人，我会怎么做？",
+	"answer": [{
+		"value": "大胆向前拿联络方式 ",
+		"is_right": "0",
+		"id": "186"
+	}, {
+		"value": "默默关注所有关于ta的状态",
+		"is_right": "0",
+		"id": "187"
+	}, {
+		"value": "放在心底",
+		"is_right": "0",
+		"id": "188"
+	}]
+}, {
+	"subjectId": "56",
+	"author": "",
+	"question": "我心情不好时会怎么样？",
+	"answer": [{
+		"value": "吃东西",
+		"is_right": "0",
+		"id": "189"
+	}, {
+		"value": "找人倾诉",
+		"is_right": "0",
+		"id": "190"
+	}, {
+		"value": "哭一场",
+		"is_right": "0",
+		"id": "191"
+	}, {
+		"value": "睡一觉",
+		"is_right": "0",
+		"id": "192"
+	}]
+}, {
+	"subjectId": "57",
+	"author": "",
+	"question": "我的异性朋友较多，还是同性朋友较多？",
+	"answer": [{
+		"value": "异性朋友",
+		"is_right": "0",
+		"id": "193"
+	}, {
+		"value": "同性朋友",
+		"is_right": "0",
+		"id": "194"
+	}, {
+		"value": "一样多",
+		"is_right": "0",
+		"id": "195"
+	}]
+}, {
+	"subjectId": "58",
+	"author": "",
+	"question": "我会向喜欢的人告白吗？",
+	"answer": [{
+		"value": "会",
+		"is_right": "0",
+		"id": "196"
+	}, {
+		"value": "不会",
+		"is_right": "0",
+		"id": "197"
+	}, {
+		"value": "想但是怕被拒绝",
+		"is_right": "0",
+		"id": "198"
+	}]
+}, {
+	"subjectId": "59",
+	"author": "",
+	"question": "我会选择爱我的人还是我爱的人？ ",
+	"answer": [{
+		"value": "爱我的人",
+		"is_right": "0",
+		"id": "199"
+	}, {
+		"value": "我爱的人",
+		"is_right": "0",
+		"id": "200"
+	}]
+}, {
+	"subjectId": "61",
+	"author": "",
+	"question": "我拍照时最喜欢的动作是？",
+	"answer": [{
+		"value": "撩人的比心",
+		"is_right": "0",
+		"id": "205"
+	}, {
+		"value": "二哈气质的剪刀手",
+		"is_right": "0",
+		"id": "206"
+	}, {
+		"value": "老干部专用的严肃系列",
+		"is_right": "0",
+		"id": "207"
+	}, {
+		"value": "各种风格我都能驾驭",
+		"is_right": "0",
+		"id": "208"
+	}]
+}, {
+	"subjectId": "62",
+	"author": "",
+	"question": "食物不小心掉地上了，我觉得.......",
+	"answer": [{
+		"value": "必须相信三秒定律，捡起来吹一吹就能吃啦",
+		"is_right": "0",
+		"id": "209"
+	}, {
+		"value": "好脏啊，只好放弃它了",
+		"is_right": "0",
+		"id": "210"
+	}]
+}, {
+	"subjectId": "64",
+	"author": "",
+	"question": "成长岁月中最怀念的是哪个阶段？",
+	"answer": [{
+		"value": "还没上学时",
+		"is_right": "0",
+		"id": "213"
+	}, {
+		"value": "小学时光",
+		"is_right": "0",
+		"id": "214"
+	}, {
+		"value": "中学时光",
+		"is_right": "0",
+		"id": "215"
+	}, {
+		"value": "大学时光",
+		"is_right": "0",
+		"id": "216"
+	}]
+}, {
+	"subjectId": "65",
+	"author": "",
+	"question": "我是一个很有自信的人吗？",
+	"answer": [{
+		"value": "非常自信",
+		"is_right": "0",
+		"id": "217"
+	}, {
+		"value": "并没有",
+		"is_right": "0",
+		"id": "218"
+	}]
+}, {
+	"subjectId": "67",
+	"author": "",
+	"question": "我属于下面哪一种类型？",
+	"answer": [{
+		"value": "开朗活泼型",
+		"is_right": "0",
+		"id": "223"
+	}, {
+		"value": "闷骚型",
+		"is_right": "0",
+		"id": "224"
+	}, {
+		"value": "成熟有魅力型",
+		"is_right": "0",
+		"id": "225"
+	}, {
+		"value": "霸气侧漏型",
+		"is_right": "0",
+		"id": "226"
+	}]
+}, {
+	"subjectId": "69",
+	"author": "",
+	"question": "我喝醉时的状态是？",
+	"answer": [{
+		"value": "神经质",
+		"is_right": "0",
+		"id": "231"
+	}, {
+		"value": "不省人事",
+		"is_right": "0",
+		"id": "232"
+	}, {
+		"value": "话特多",
+		"is_right": "0",
+		"id": "233"
+	}, {
+		"value": "一秒变流氓",
+		"is_right": "0",
+		"id": "234"
+	}]
+}, {
+	"subjectId": "70",
+	"author": "",
+	"question": "我后悔放弃过自己很爱的人吗？",
+	"answer": [{
+		"value": "后悔",
+		"is_right": "0",
+		"id": "235"
+	}, {
+		"value": "不后悔",
+		"is_right": "0",
+		"id": "236"
+	}]
+}]
+module.exports = arr;

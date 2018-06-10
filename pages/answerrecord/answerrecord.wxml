@@ -1,0 +1,60 @@
+<image class='page_bg' src='/images/bg.png' mode='aspectFill'></image>
+<!-- 非空 -->
+<view class='ar' wx:if="{{arr.length>0}}">
+    <view class='ar_box' wx:for="{{arr}}" wx:key="{{index}}">
+        <view class='ar_title'>{{item.updateTime}}</view>
+        <view class='ar_item' bindtap='lookData' data-item="{{item}}">
+            <view class='ar_info'>
+                <image class='ar_head' src='{{item.user.headImg}}' mode='aspectFit'></image>
+                <view class='ar_text'>
+                    <view class='ar_name'>
+                        <view class='ar_name_text'>{{item.user.nickname}}</view>
+                        <view class='ar_tag'>答了<text>{{item.answerCount}}</text>次</view>
+                    </view>
+                    <view class='ar_desc' wx:if="{{item.accuracy*100==100}}">知我者，非你莫属~</view>
+                    <view class='ar_desc' wx:if="{{item.accuracy*100==90}}">一般人绝对对不了这么多！</view>
+                    <view class='ar_desc' wx:if="{{item.accuracy*100==80}}">我的小心思你果然都懂！</view>
+                    <view class='ar_desc' wx:if="{{item.accuracy*100==70}}">默契再高一点点，我就跟你走！</view>
+                    <view class='ar_desc' wx:if="{{item.accuracy*100==60}}">让我们把友谊再升华下！</view>
+                    <view class='ar_desc' wx:if="{{item.accuracy*100==50}}">你保住了我们的革命友谊！</view>
+                    <view class='ar_desc' wx:if="{{item.accuracy*100==40}}">走点心，我们还能抢救下！</view>
+                    <view class='ar_desc' wx:if="{{item.accuracy*100==30}}">点赞之交是咱俩最深的交情！</view>
+                    <view class='ar_desc' wx:if="{{item.accuracy*100==20}}">你我本无缘，全靠朋友圈！</view>
+                    <view class='ar_desc' wx:if="{{item.accuracy*100==10}}">老铁扎心了，我们见过吗？</view>
+                    <view class='ar_desc' wx:if="{{item.accuracy*100==0}}">你是如何完美避开所有正确答案的？</view>
+                </view>
+            </view>
+            <view class='ar_percent'>{{item.accuracy*100}}%</view>
+        </view>
+    </view>
+</view>
+<!-- 空 -->
+<view class='lp_empty' wx:else>
+    <view class='lp_empty_text'>您还没有答过题哦～</view>
+    <button class='lp_empty_btn main_btn' open-type='share'>喊好友出题给我</button>
+</view>
+<!-- 偷看答案 -->
+<view class='look {{isLook?"show":""}}'>
+    <view class='look_bg'></view>
+    <view class='look_box'>
+        <view class='look_shut' bindtap='hideToggle' data-item="isLook">
+            <image class='look_icon' src='/images/icon_shut.png' mode='aspectFill'></image>
+        </view>
+        <view class='look_info'>
+            <view class='look_user'>
+                <image class='look_head' src='{{cur.head}}' mode='aspectFill'></image>
+                <view class='look_title'><text>{{cur.title}}</text></view>
+            </view>
+            <view class='look_btn main_btn' bindtap='curBtn'>{{cur.btn}}</view>
+        </view>
+        <view class='look_rolling'>
+            <view class='look_item {{cur.btn=="我的回答"?"look_steal":""}} {{item.right?"":"look_error"}}' wx:for="{{cur.arr}}" wx:key="{{index}}">
+                <view class='look_problem'>Q{{index+1}}:{{item.problem}}</view>
+                <view class='look_answer'>
+                    <image class='look_img' hidden='{{cur.btn=="我的回答"}}' src="/images/{{item.right?'icon_success':'icon_fail'}}.png"></image>
+                    <view class='look_text'>{{item.answer}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

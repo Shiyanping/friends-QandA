@@ -1,0 +1,27 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+page{text-align:center;color:#fff;background:#141024;}
+/* 按钮清空默认样式 */
+.button_empty{padding:0;line-height:auto;border-radius:0;}
+/* 页面背景样式，需要主动引入对应的wxml */
+/* <image class='page_bg' src='/images/bg.png' mode='aspectFill'></image> */
+.page_bg{position:fixed;top:0;right:0;bottom:0;left:0;z-index: -9;width:100%;height:100%;}
+/* 主按钮样式及其交互效果 */
+.main_btn{background-image: linear-gradient(to right, #7D77E2, #986FDA);border-radius: 20rpx;height:108rpx;line-height:108rpx;text-align:center;color:#fff;font-size:36rpx;}
+.main_btn:active{background-image: linear-gradient(to left, #7D77E2, #986FDA);}
+/* 次按钮样式及其交互效果 */
+.second_btn{background: rgba(255,255,255,0.30);border-radius: 20rpx;height:108rpx;line-height:108rpx;text-align:center;color:#fff;font-size:36rpx;}
+.second_btn:active{background: rgba(198,132,255,0.40);}
+/* 弹框背景 */
+.bg{background: rgba(0,0,0,0.75);position:fixed;top:0;right:0;bottom:0;left:0;z-index: 998;}
+/* 弹框关闭 */
+.shut{overflow:hidden;position:absolute;top:0;right:0;padding:24rpx;}
+.shut_icon{width:40rpx;height:40rpx;float:left;margin:0;}

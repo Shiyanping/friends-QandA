@@ -1,0 +1,46 @@
+<!-- canvas问题探索 -->
+<canvas canvas-id="canvas" bindtouchstart="start"/> 
+<!-- 弹框-单按钮 -->
+<view class='success' hidden='1'>
+    <view class='success_bg'></view>
+    <view class='success_box'>
+        <view class='success_shut'>
+            <image class='success_icon' src='/images/icon_shut.png'></image>
+        </view>
+        <view class='success_title'>
+            <text>海报已保存到您的手机相册\n分享朋友圈的时候选中该图片即可</text>
+        </view>
+        <view class='success_btn main_btn'>确定</view>
+    </view>
+</view>
+<!-- 弹框-双按钮 -->
+<view class='success' hidden='1'>
+    <view class='success_bg'></view>
+    <view class='success_box'>
+        <view class='success_shut'>
+            <image class='success_icon' src='/images/icon_shut.png'></image>
+        </view>
+        <view class='success_title'>
+            <text>海报已保存到您的手机相册\n分享朋友圈的时候选中该图片即可</text>
+        </view>
+        <view class='success_btns'>
+            <view class='success_btn main_btn success_cancel'>取消</view>
+            <view class='success_btn main_btn'>确定</view>
+        </view>
+    </view>
+</view>
+<!-- 弹框-登录提示 -->
+<view class='login' hidden='1'>
+    <view class='bg'></view>
+    <view class='login_box'>
+        <view class='shut'>
+            <image class='shut_icon' src='/images/icon_shut.png' mode='aspectFill'></image>
+        </view>
+        <view class='login_head'>
+            <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <view class='login_name'><open-data type="userNickName"></open-data></view>
+        <view class='login_desc'>为了给您更好的服务请先登录</view>
+        <button class='main_btn login_btn' open-type="getUserInfo" bindgetuserinfo="onGetuserinfo">登录</button>
+    </view>
+</view>

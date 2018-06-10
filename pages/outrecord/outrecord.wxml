@@ -1,0 +1,87 @@
+<image class='page_bg' src='/images/bg.png' mode='aspectFill'></image>
+<!-- list -->
+<view class='record' wx:for="{{list}}" wx:key="{{pindex}}" wx:for-index="pindex" wx:for-item="pitem" wx:if="{{list.length>0}}">
+    <view class='record_title'>
+        <view class='record_time'>{{pitem.createTime}}</view>
+        <view class='record_look main_btn' bindtap='lookTopic' data-id='{{pitem.recordId}}'>查看题目</view>
+    </view>
+    <view class='record_empty' hidden="{{pitem.answerBys.length>0}}">该套题暂时还没有人作答哦～</view>
+    <view class='record_box'>
+        <view class='over_box {{(index+1)==1?"first":""}} {{(index+1)==2?"second":""}} {{(index+1)==3?"three":""}}' wx:for="{{pitem.answerBys}}" wx:key="{{index}}" wx:if='{{index<4}}' bindtap="lookUserAnswer" data-pid="{{pitem.recordId}}" data-id="{{item.recordId}}">
+            <view class='over_num'>
+                <view class='over_rank'>{{index+1}}</view>
+            </view>
+            <image class='over_head' src='{{item.user.headImg?item.user.headImg:"/images/empty.png"}}' mode='aspectFill'></image>
+            <view class='over_info'>
+                <view class='over_name'>
+                    <view class='over_text'>{{item.user.nickname?item.user.nickname:(item.user.gender==2?'红粉佳人':'蓝颜知己')}}</view>
+                    <view class='over_tag'>答了
+                        <text>{{item.answerCount?item.answerCount:0}}</text>次</view>
+                </view>
+                <view class='over_desc'>让我们把友谊再升华下！</view>
+            </view>
+            <view class='over_percent'>{{item.accuracy*100}}%</view>
+        </view>
+        <!-- 4个以上 -->
+        <view hidden='{{!pitem.toggle}}'>
+            <view class='over_box {{(index+1)==1?"first":""}} {{(index+1)==2?"second":""}} {{(index+1)==3?"three":""}}' wx:for="{{pitem.answerBys}}" wx:key="{{index}}" wx:if="{{index>=4}}" bindtap="lookUserAnswer" data-pid="{{pitem.recordId}}" data-id="{{item.recordId}}">
+                <view class='over_num'>
+                    <view class='over_rank'>{{index+1}}</view>
+                </view>
+                <image class='over_head' src='{{item.user.headImg?item.user.headImg:"/images/empty.png"}}' mode='aspectFill'></image>
+                <view class='over_info'>
+                    <view class='over_name'>
+                        <view class='over_text'>{{item.user.nickname?item.user.nickname:(item.user.gender==2?'红粉佳人':'蓝颜知己')}}</view>
+                        <view class='over_tag'>答了
+                            <text>{{item.answerCount?item.answerCount:0}}</text>次</view>
+                    </view>
+                    <view class='over_desc'>让我们把友谊再升华下！</view>
+                </view>
+                <view class='over_percent'>{{item.accuracy*100}}%</view>
+            </view>
+        </view>
+        <view class='record_all' bindtap='openAll' data-item="{{pitem}}" data-index="{{pindex}}" wx:if='{{pitem.answerBys.length>4}}'>{{!pitem.toggle?'展开全部':'收起'}}</view>
+    </view>
+</view>
+<!-- 空 -->
+<view class='lp_empty {{list.length<=0?"show":""}}'>
+    <view class='lp_empty_text'>您还没有出过题哦～</view>
+    <view class='lp_empty_btn main_btn' bindtap='emptyIndex'>马上去出题</view>
+</view>
+<!-- 查看用户答题情况 -->
+<view class='look {{isLook?"show":""}}'>
+    <view class='look_bg'></view>
+    <view class='look_box'>
+        <view class='look_shut' bindtap='hideToggle' data-item="isLook">
+            <image class='look_icon' src='/images/icon_shut.png' mode='aspectFill'></image>
+        </view>
+        <view class='look_info'>
+            <view class='look_user'>
+                <image class='look_head' src='{{topicList.head}}' mode='aspectFill'></image>
+                <view class='look_name' wx:if="{{topicList.isName}}">{{topicList.name}}</view>
+                <view class='look_btn main_btn' wx:else bindtap='requestWho'>看看TA是谁</view>
+            </view>
+        </view>
+        <view class='look_rolling'>
+            <view class='look_item {{item.right?"":"look_error"}}' wx:for="{{topicList.arr}}" wx:key="{{index}}">
+                <view class='look_problem'>Q{{index+1}}:{{item.problem}}</view>
+                <view class='look_answer'>
+                    <image class='look_img' src="/images/{{item.right?'icon_success':'icon_fail'}}.png"></image>
+                    <view class='look_text'>{{item.answer}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 看看TA是谁 -->
+<view class='who {{isPay?"show":""}}'>
+    <view class='who_bg'></view>
+    <view class='who_box'>
+        <view class='who_shut' bindtap='hidePay'>
+            <image class='who_icon' src='/images/icon_shut.png'></image>
+        </view>
+        <view class='who_title'>看看TA是谁</view>
+        <view class='who_btn main_btn' bindtap='payMoney' data-pay="0.5">支付0.5元查看当前好友1次</view>
+        <view class='who_btn main_btn' bindtap='payMoney' data-pay="2">支付2元查看所有好友</view>
+    </view>
+</view>

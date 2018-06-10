@@ -1,0 +1,68 @@
+page{padding-bottom:60rpx;}
+.crystal{width:200rpx;height:200rpx;border-radius:50%;box-shadow: 0 0 12rpx #9013FE;margin:46rpx auto 0;position:relative;background:#D8D8D8;overflow:hidden;}
+.crystal_bg{position:absolute;top:0;left:0;width:200rpx;height:200rpx;z-index:1;}
+.crystal_plan{position:absolute;left:0;right:0;bottom:0;background:rgba(144,19,254,.25);z-index: 2;}
+.crystal_degree{position:absolute;top:0;left:0;width:200rpx;height:200rpx;z-index: 3;display:flex;justify-content: center;align-items: center;color: #9013FE;font-size:72rpx;}
+/* btn */
+.btn{display:flex;justify-content:space-between;padding:36rpx 60rpx 0;}
+.btn_item{font-size:28rpx;display:flex;align-items: center;padding:32rpx 0;}
+.btn_icon{width:32rpx;height:32rpx;margin-right:8rpx;}
+/* .btn_text{} */
+.btn_color{color: #F8E71C;}
+/* 内容 */
+.over{background:rgba(207,169,240,.17);border-radius:34rpx;margin:0 60rpx;}
+.over_box{display:flex;align-items: center;padding:40rpx 12rpx;justify-content: space-between;}
+.over_box+.over_box{border-top:solid 1px rgba(255,255,255,.2);}
+.over_num{max-width:60rpx;display:flex;justify-content: left;}
+.over_rank{background: rgba(207,169,240,0.17);height:36rpx;font-size:24rpx;line-height: 36rpx;padding:0 12rpx;display:inline-block;border-radius:30rpx;}
+.over_head{width:88rpx;height:88rpx;border-radius:50%;border:solid 1px #fff;}
+.over_info{text-align:left;width:320rpx;}
+.over_name{font-size:28rpx;display:flex;align-items: center;}
+.over_text{margin-right:10rpx;max-width:180rpx;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.over_tag{background: rgba(207,169,240,0.17);border-radius: 2px;font-size:24rpx;display:inline-block;height:34rpx;line-height:34rpx;padding:0 18rpx;}
+.over_tag text{color: #F8E71C;}
+.over_desc{color: rgba(255,255,255,0.70);font-size:24rpx;padding-top:6rpx;}
+.over_percent{font-size:40rpx;}
+/* 第一名 */
+/* .first{} */
+.first .over_rank,.first .over_text,.first .over_percent{color: #F8E71C;}
+/* .second{} */
+.second .over_rank,.second .over_text,.second .over_percent{color: #F5A623;}
+/* .three{} */
+.three .over_rank,.three .over_text,.three .over_percent{color: #7ED321;}
+/* 再答一次 */
+.once{display:none;}
+.once_bg{background: rgba(0,0,0,0.75);position:fixed;top:0;right:0;bottom:0;left:0;z-index: 998;}
+.once_box{position: fixed;top:50%;left:76rpx;right:76rpx;transform:translateY(-50%);z-index: 999;background: #FFFFFF;border-radius:24rpx;padding:76rpx 32rpx 40rpx;}
+.once_shut{position:absolute;top:0;right:0;overflow:hidden;padding:24rpx;}
+.once_icon{width:40rpx;height:40rpx;float:left;}
+.once_title{color: #323232;font-size:32rpx;padding-bottom:16rpx;}
+.once_btn{border-radius:108rpx;display:flex;justify-content: center;align-items: center;box-shadow: 0 2px 4px 0 rgba(144,19,254,0.35);margin-top:30rpx;}
+.once_img{width:50rpx;height:50rpx;margin-right:4rpx;}
+.once_text{font-size:36rpx;}
+/* 我的回答 */
+.look{display:none;} 
+.look_bg{background: rgba(0,0,0,0.75);position:fixed;top:0;right:0;bottom:0;left:0;z-index: 998;}
+.look_box{background: #FFFFFF;border-radius:24rpx;position:fixed;left:76rpx;right:76rpx;z-index: 999;top:80rpx;bottom:80rpx;overflow:hidden;}
+.look_shut{overflow:hidden;position:absolute;top:0;right:0;z-index: 2;padding:24rpx;}
+.look_icon{width:40rpx;height:40rpx;float:left;}
+.look_info{display:flex;justify-content: space-between;padding:90rpx 46rpx 20rpx;align-items: center;border-bottom:solid 1px rgba(200,200,200,.5);background:#fff;}
+.look_user{display:flex;align-items: center;}
+.look_head{width:88rpx;height:88rpx;border-radius:50%;}
+.look_title{color: #323232;font-size:36rpx;font-weight:bold;margin-left:18rpx;}
+.look_btn{width:164rpx;height:64rpx;line-height:64rpx;box-shadow: 0 2px 4px 0 rgba(144,19,254,0.35);border-radius:64rpx;font-size:28rpx;}
+.look_rolling{padding:0 34rpx 40rpx;text-align:left;position:absolute;top:198rpx;right:0;left:0;bottom:0;z-index:1;overflow:auto;-webkit-overflow-scrolling: touch;}
+.look_item{padding-top:40rpx;}
+.look_problem{color: #323232;font-size:36rpx;font-weight:bold;line-height:1.5;}
+.look_answer{padding-top:16rpx;line-height:1.5;position:relative;padding-left:44rpx;}
+.look_img{width:36rpx;height:36rpx;position:absolute;top:22rpx;left:0;}
+.look_text{font-size:36rpx;color:#323232;}
+/* 用户回答错误 */
+/* .look_error{} */
+.look_error .look_problem{color: #FF3300;}
+.look_error .look_text{color: #FF3300;}
+/* 偷看答案-显示 */
+/* .look_steal{} */
+.look_steal .look_text{color: #9013FE;}
+/* show */
+.show{display:block;}

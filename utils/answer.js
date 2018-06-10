@@ -1,0 +1,208 @@
+const arr = [{
+	"subjectId": "2",
+	"author": "",
+	"question": "人生三大事后感觉没发挥好的事件，我认为最扎心的是？",
+	"answer": [{
+		"value": "参加考试",
+		"is_right": "0",
+		"id": "5"
+	}, {
+		"value": "和别人撕逼",
+		"is_right": "0",
+		"id": "6"
+	}, {
+		"value": "和喜欢的人聊天",
+		"is_right": "0",
+		"id": "7"
+	}, {
+		"value": "这些我都不care的啦",
+		"is_right": "0",
+		"id": "8"
+	}]
+}, {
+	"subjectId": "3",
+	"author": "",
+	"question": "微信里不受欢迎的行为中，我最不喜欢的是？",
+	"answer": [{
+		"value": "动不动就发60秒超长语音",
+		"is_right": "0",
+		"id": "9"
+	}, {
+		"value": "频繁更换微信头像和名字",
+		"is_right": "0",
+		"id": "10"
+	}, {
+		"value": "群发投票、祝福等消息",
+		"is_right": "0",
+		"id": "11"
+	}, {
+		"value": "红包从来只抢不发",
+		"is_right": "0",
+		"id": "12"
+	}]
+}, {
+	"subjectId": "5",
+	"author": "",
+	"question": "当我的青蛙不回家时，我会认为它？",
+	"answer": [{
+		"value": "变成了红烧田鸡",
+		"is_right": "0",
+		"id": "17"
+	}, {
+		"value": "遇到了石原里美",
+		"is_right": "0",
+		"id": "18"
+	}, {
+		"value": "干粮不够，晕倒在路边",
+		"is_right": "0",
+		"id": "19"
+	}, {
+		"value": "管他的，崽带回稀有明信片就行",
+		"is_right": "0",
+		"id": "20"
+	}]
+}, {
+	"subjectId": "6",
+	"author": "",
+	"question": "我认为自己是个很污的人吗？",
+	"answer": [{
+		"value": "老司机带带我，我是白莲花",
+		"is_right": "0",
+		"id": "21"
+	}, {
+		"value": "污力滔滔的污妖王本尊无疑了",
+		"is_right": "0",
+		"id": "22"
+	}, {
+		"value": "偶尔污一点才是小可爱嘛",
+		"is_right": "0",
+		"id": "23"
+	}]
+}, {
+	"subjectId": "7",
+	"author": "",
+	"question": "以下哪句话最能撩到我？",
+	"answer": [{
+		"value": "“如果你前任和现任同时掉水里，我能做你男/女朋友吗？”",
+		"is_right": "0",
+		"id": "24"
+	}, {
+		"value": "“可以帮我洗个东西吗？”“洗什么？”“喜欢我。”",
+		"is_right": "0",
+		"id": "25"
+	}, {
+		"value": "“最近有谣言说我喜欢你，我要澄清一下，这不是谣言。”",
+		"is_right": "0",
+		"id": "26"
+	}, {
+		"value": "“我想你应该很忙吧，那就只看前三个字就好啦！”",
+		"is_right": "0",
+		"id": "27"
+	}]
+}, {
+	"subjectId": "8",
+	"author": "",
+	"question": "如果我有哆啦A梦的神奇口袋，我最想拥有？",
+	"answer": [{
+		"value": "想去哪儿就去哪儿的任意门",
+		"is_right": "0",
+		"id": "28"
+	}, {
+		"value": "能穿梭过去和未来的时光机",
+		"is_right": "0",
+		"id": "29"
+	}, {
+		"value": "吃下就能记住的记忆面包",
+		"is_right": "0",
+		"id": "30"
+	}, {
+		"value": "可以随时飞起来的竹蜻蜓",
+		"is_right": "0",
+		"id": "31"
+	}]
+}, {
+	"subjectId": "9",
+	"author": "",
+	"question": "以下情况最令我抓狂的是？",
+	"answer": [{
+		"value": "没有WiFi",
+		"is_right": "0",
+		"id": "32"
+	}, {
+		"value": "手机电量不足",
+		"is_right": "0",
+		"id": "33"
+	}, {
+		"value": "打开网页一直加载",
+		"is_right": "0",
+		"id": "34"
+	}, {
+		"value": "都很抓狂",
+		"is_right": "0",
+		"id": "35"
+	}]
+}, {
+	"subjectId": "10",
+	"author": "",
+	"question": "我最不喜欢在以下哪个场合和别人聊天？",
+	"answer": [{
+		"value": "高峰地铁上，离得很近依然要彼此吆喝",
+		"is_right": "0",
+		"id": "36"
+	}, {
+		"value": "电梯里唠嗑，旁边陌生人都能听见",
+		"is_right": "0",
+		"id": "37"
+	}, {
+		"value": "公司洗手间/走廊碰到不熟的同事",
+		"is_right": "0",
+		"id": "38"
+	}, {
+		"value": "理发时遇到很健谈的Tony老师",
+		"is_right": "0",
+		"id": "39"
+	}]
+}, {
+	"subjectId": "11",
+	"author": "",
+	"question": "一句话证明我是吃货，我会选？",
+	"answer": [{
+		"value": "姐，遇到新东方厨师就嫁了吧！",
+		"is_right": "0",
+		"id": "40"
+	}, {
+		"value": "没什么是一顿火锅解决不了的，如果有，那就两顿！",
+		"is_right": "0",
+		"id": "41"
+	}, {
+		"value": "老祖宗说的好：识食物者为俊杰",
+		"is_right": "0",
+		"id": "42"
+	}, {
+		"value": "我这辈子，唯一拿得起放不下的，就属筷子了......",
+		"is_right": "0",
+		"id": "43"
+	}]
+}, {
+	"subjectId": "12",
+	"author": "",
+	"question": "每次听到我都忍不住想diss的是？",
+	"answer": [{
+		"value": "在吗",
+		"is_right": "0",
+		"id": "44"
+	}, {
+		"value": "有对象了吗",
+		"is_right": "0",
+		"id": "45"
+	}, {
+		"value": "一个月赚多少啊",
+		"is_right": "0",
+		"id": "46"
+	}, {
+		"value": "能给我包个红包吗",
+		"is_right": "0",
+		"id": "47"
+	}]
+}]
+module.exports = arr;

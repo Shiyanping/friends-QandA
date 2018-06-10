@@ -1,0 +1,31 @@
+.top{overflow:auto;-webkit-overflow-scrolling: touch;display:flex;flex-direction: column;padding-bottom:940rpx;}
+/* 默认左侧 */
+.box{padding:16rpx 0;}
+.box_item{padding:16rpx 58rpx;position:relative;overflow:hidden;}
+.box_head{width:80rpx;height:80rpx;border:solid 2rpx #fff;border-radius:50%;float:left;}
+.def_head{width:80rpx;height:80rpx;border:solid 2rpx #fff;border-radius:50%;float:left;overflow:hidden;}
+.box_content{font-size: 14px;color: #FFFFFF;line-height:1.5;padding:20rpx;text-align:left;background: #332843;border-radius: 20rpx;position:relative;float:left;margin-left:24rpx;max-width:460rpx;}
+.box_content::after{content:'';width:28rpx;height:28rpx;background:#332843;position:absolute;top:50%;left:0;border-radius:4rpx;transform:rotate(45deg) translate(-50%);}
+/* 右侧 */
+/* .box_right{} */
+.box_right .box_head,.box_right .def_head{float:right;margin:0;}
+.box_right .box_content{float:right;margin-right:24rpx;}
+.box_right .box_content::after{left:auto;right:0;transform:rotate(45deg) translateY(-50%);} 
+/* 回答 */
+.bottom{position:fixed;bottom:0;left:0;right:0;height:480rpx;padding:60rpx;overflow:auto;-webkit-overflow-scrolling: touch;display:flex;flex-direction: column-reverse;z-index: 99;transform:translateY(100%);transition:all .6s;}
+.bottom_hover{transform:translateY(0);}
+.bottom_bg{position:absolute;top:0;left:0;width:100%;height:100%;background:#141024;}
+.out_con{font-size:28rpx;background: rgba(255,255,255,0.30);margin-top:30rpx;text-align:left;padding:32rpx 30rpx;line-height:1.5;height:auto;position:relative;padding-left:80rpx;}
+.out_con::after{content:'';width:30rpx;height:30rpx;border:solid 2rpx #9013FE;position:absolute;top:50%;left:30rpx;transform:translateY(-50%);border-radius:50%;background:#fff;}
+.out_con:active::after{background:#9013FE;border-color:#fff;}
+.out_btn{margin:80rpx 60rpx 0;}
+.out_active::after{background:#9013FE;border-color:#fff;}
+/* 弹框-登录 */
+.login{display:none;}
+.login_box{background: #FFFFFF;z-index: 999;position:fixed;top:50%;left:76rpx;right:76rpx;transform:translateY(-50%);border-radius:20rpx;padding-bottom:54rpx;}
+.login_head{width:180rpx;height:180rpx;border-radius:50%;box-shadow: 0 0 0 6rpx #fff;margin:0 auto;margin-top:-90rpx;overflow:hidden;}
+.login_name{font-size:40rpx;color: #323232;padding:18rpx 0;}
+.login_desc{font-size:32rpx;color: #8E8E8E;padding-bottom:50rpx;}
+.login_btn{border-radius:108rpx;margin:0 64rpx;}
+/* show */
+.show{display:block;}

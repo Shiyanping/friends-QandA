@@ -1,0 +1,93 @@
+<image class='page_bg' src='/images/bg.png' mode='aspectFill'></image>
+<!-- 水晶球 -->
+<view class='crystal'>
+    <image class='crystal_bg' src='/images/crystal_bg.png' mode='aspectFill'></image>
+    <view class='crystal_plan' style='height:{{user.recordId}}%;'></view>
+    <view class='crystal_degree'>{{user.recordId}}%</view>
+</view>
+<!-- 按钮 -->
+<view class='btn'>
+    <view class='btn_item' bindtap='btnIndex'>
+        <image class='btn_icon' src='/images/icon_1.png' mode='aspectFill'></image>
+        <view class='btn_text'>我也发一个</view>
+    </view>
+    <view class='btn_item' bindtap='btnAgain'>
+        <image class='btn_icon' src='/images/icon_2.png' mode='aspectFill'></image>
+        <view class='btn_text'>再答一次</view>
+    </view>
+    <view class='btn_item' bindtap='btnLook'>
+        <image class='btn_icon' src='/images/icon_3.png' mode='aspectFill'></image>
+        <view class='btn_text btn_color' bindtap='answerToggle'>偷看答案</view>
+    </view>
+</view>
+<!-- 内容 -->
+<view class='over'>
+    <view class='over_box {{(index+1)==1?"first":""}} {{(index+1)==2?"second":""}} {{(index+1)==3?"three":""}}' wx:for="{{arr}}" wx:key="{{index}}">
+        <view class='over_num'>
+            <view class='over_rank'>{{index+1}}</view>
+        </view>
+        <image class='over_head' src='{{item.user.headImg}}' mode='aspectFill'></image>
+        <view class='over_info'>
+            <view class='over_name'>
+                <view class='over_text'>{{item.user.nickname}}</view>
+                <view class='over_tag'>答了
+                    <text>{{item.answerCount}}</text>次</view>
+            </view>
+            <view class='over_desc' wx:if="{{user.recordId==100}}">知我者，非你莫属</view>
+            <view class='over_desc' wx:if="{{user.recordId==90}}">一般人绝对对不了这么多！</view>
+            <view class='over_desc' wx:if="{{user.recordId==80}}">我的小心思你果然都懂！</view>
+            <view class='over_desc' wx:if="{{user.recordId==70}}">默契再高一点点，我就跟你走！</view>
+            <view class='over_desc' wx:if="{{user.recordId==60}}">让我们把友谊再升华下！</view>
+            <view class='over_desc' wx:if="{{user.recordId==50}}">你保住了我们的革命友谊！</view>
+            <view class='over_desc' wx:if="{{user.recordId==40}}">走点心，我们还能抢救下！</view>
+            <view class='over_desc' wx:if="{{user.recordId==30}}">点赞之交是咱俩最深的交情！</view>
+            <view class='over_desc' wx:if="{{user.recordId==20}}">你我本无缘，全靠朋友圈！</view>
+            <view class='over_desc' wx:if="{{user.recordId==10}}">老铁扎心了，我们见过吗？</view>
+            <view class='over_desc' wx:if="{{user.recordId==0}}">你是如何完美避开所有正确答案的？</view>
+        </view>
+        <view class='over_percent'>{{item.accuracy*100}}%</view>
+    </view>
+</view>
+<!-- 再答一次 -->
+<view class='once {{isAgain?"show":""}}'>
+    <view class='once_bg'></view>
+    <view class='once_box'>
+        <view class='once_shut' bindtap='hideToggle' data-item="isAgain">
+            <image class='once_icon' src='/images/icon_shut.png' mode='aspectFill'></image>
+        </view>
+        <view class='once_title'>再答一次</view>
+        <button class='once_btn main_btn' open-type='share'>
+            <image class='once_img' src='/images/icon_wechat.png' mode='aspectFit'></image>
+            <view class='once_text'>分享到微信群再答一次</view>
+        </button>
+        <view class='once_btn main_btn' bindtap='requestPay'>
+            <image class='once_img' src='/images/icon_money.png' mode='aspectFit'></image>
+            <view class='once_text'>支付0.5元再答一次</view>
+        </view>
+    </view>
+</view>
+<!-- 偷看答案 -->
+<view class='look {{isLook?"show":""}}'>
+    <view class='look_bg'></view>
+    <view class='look_box'>
+        <view class='look_shut' bindtap='hideToggle' data-item="isLook">
+            <image class='look_icon' src='/images/icon_shut.png' mode='aspectFill'></image>
+        </view>
+        <view class='look_info'>
+            <view class='look_user'>
+                <image class='look_head' src='{{cur.head}}' mode='aspectFill'></image>
+                <view class='look_title'>{{cur.title}}</view>
+            </view>
+            <view class='look_btn main_btn' bindtap='curBtn'>{{cur.btn}}</view>
+        </view>
+        <view class='look_rolling'>
+            <view class='look_item {{cur.btn=="我的回答"?"look_steal":""}} {{item.right?"":"look_error"}}' wx:for="{{cur.arr}}" wx:key="{{index}}">
+                <view class='look_problem'>Q{{index+1}}:{{item.problem}}</view>
+                <view class='look_answer'>
+                    <image class='look_img' hidden='{{cur.btn=="我的回答"}}' src="/images/{{item.right?'icon_success':'icon_fail'}}.png"></image>
+                    <view class='look_text'>{{item.answer}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

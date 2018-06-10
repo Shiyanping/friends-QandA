@@ -1,0 +1,38 @@
+<!-- 新版显示 -->
+<view class='outover' hidden="{{!topToggle}}">
+    <image class='outover_title' src='/images/canvas_top.png' mode='aspectFit'></image>
+    <view class='outover_head'>
+        <open-data type="userAvatarUrl"></open-data>
+    </view>
+</view>
+<!-- 老版本 -->
+<!-- <image class='page_bg' src='/images/bg.png' mode='aspectFill'></image> -->
+<!-- canvas模式 -->
+<view hidden="{{topToggle}}">
+    <canvas canvas-id="canvas" bindtouchstart="start" hidden="{{isCanvas}}" />
+    <image class='canvas_img' src='{{url}}' mode='aspectFill' hidden="{{!isCanvas}}" bindtap='previewImg'></image>
+</view>
+<!-- <image class='canvas_img' src='http://p1g0rvvn6.bkt.clouddn.com/height.jpg' mode='aspectFill' hidden="{{isCanvas}}" bindtap='previewImg'></image> -->
+<!-- 按钮 -->
+<button class="button_empty share_btn main_btn" hover-class="none" open-type="share">邀请好友答题</button>
+<view class='share_btn main_btn' bindtap='saveImg' hidden="{{topToggle}}">保存海报</view>
+<!-- 跳转到出题记录页面 -->
+<view class='share_look' bindtap='lookAnswer'></view>
+<!-- 保存成功图片弹框 -->
+<view class='success {{isSuccess?"show":""}}'>
+    <view class='success_bg'></view>
+    <view class='success_box'>
+        <view class='success_shut' bindtap='hideSuccess'>
+            <image class='success_icon' src='/images/icon_shut.png'></image>
+        </view>
+        <view class='success_title'>
+            <text>海报已保存到您的手机相册\n分享朋友圈的时候选中该图片即可</text>
+        </view>
+        <view class='success_btn main_btn' bindtap='hideSuccess'>确定</view>
+    </view>
+</view>
+<!-- 分享成功 -->
+<view class='share_success {{toast.isToast?"show":""}}'>
+    <image class='share_success_icon' src='{{toast.url}}'></image>
+    <view class='share_success_text'>{{toast.text}}</view>
+</view>

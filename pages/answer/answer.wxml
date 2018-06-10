@@ -1,0 +1,31 @@
+ <image class='page_bg' src='/images/bg.png' mode='aspectFill'></image> 
+<!-- 问题 -->
+<view class='top'>
+    <view class='box' wx:for="{{showArr}}" wx:key="{{index}}" wx:for-item="pitem" wx:for-index="pindex">
+        <view class='box_item {{item.toggle?"box_right":""}}' wx:for="{{pitem}}" wx:key="{{index}}">
+            <image class='box_head' hidden='{{item.toggle}}' src='{{item.head}}' mode='aspectFill'></image>
+            <view class='def_head' hidden='{{!item.toggle}}'><open-data type="userAvatarUrl"></open-data></view>
+            <view class='box_content'>{{item.toggle?"":(pindex+1)+"/"+arr.length}}{{item.text}}</view>
+        </view>
+    </view>
+</view>
+<!-- 回答 out_active -->
+<view class='bottom {{isBottom?"bottom_hover":""}}'>
+    <image class='bottom_bg' src='/images/bg.png' mode='aspectFill'></image>
+    <view hidden='' class='out_con second_btn' wx:for="{{answerArr}}" wx:key="{{index}}" data-id="{{item.id}}" bindtap='userSelect'>{{item.value}}</view>
+</view>
+<!-- 弹框-登录提示 -->
+<view class='login {{isLogin?"show":""}}'>
+    <view class='bg'></view>
+    <view class='login_box'>
+        <view class='shut' bindtap='hideLogin' hidden='{{true}}'>
+            <image class='shut_icon' src='/images/icon_shut.png' mode='aspectFill'></image>
+        </view>
+        <view class='login_head'>
+            <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <view class='login_name'><open-data type="userNickName"></open-data></view>
+        <view class='login_desc'>为了给您更好的服务请先登录</view>
+        <button class='main_btn login_btn' open-type="getUserInfo" bindgetuserinfo="ongetuserinfo">登录</button>
+    </view>
+</view>

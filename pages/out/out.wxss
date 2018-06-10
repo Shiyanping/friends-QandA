@@ -1,0 +1,7 @@
+.out{padding:0 60rpx 40rpx;text-align:left;}
+.out_title{font-size:28rpx;background: rgba(207,169,240,0.17);border-radius: 20rpx;padding:32rpx 30rpx;margin-top:40rpx;}
+.out_con{font-size:28rpx;background: rgba(255,255,255,0.30);margin-top:30rpx;text-align:left;padding:32rpx 30rpx;line-height:1.5;height:auto;position:relative;padding-left:80rpx;}
+.out_con::after{content:'';width:30rpx;height:30rpx;border:solid 1px #9013FE;position:absolute;top:50%;left:30rpx;transform:translateY(-50%);border-radius:50%;background:#fff;}
+.out_con:active::after{background:#9013FE;border-color:#fff;}
+.out_btn{margin:80rpx 60rpx 0;}
+.out_active::after{background:#9013FE;border-color:#fff;}

@@ -1,0 +1,12 @@
+/* 付费详情 */
+.detail{padding:48rpx 60rpx 100rpx 60rpx;}
+.detail_bg{position:fixed;top:0;right:0;bottom:0;left:0;z-index: -1;width:100%;height:100%;}
+.detail_box{background: rgba(207,169,240,0.17);border-radius: 20rpx;padding:0 30rpx 40rpx;overflow:auto;-webkit-overflow-scrolling: touch;position:relative;}
+.detail_title{font-size: 20px;color: #FFFFFF;padding:40rpx 0;text-align:left;}
+.detail_con{font-size: 14px;color: #FFFFFF;line-height:1.8;text-align:justify;}
+.detail_content{overflow:hidden;}
+.detail_num{float:left;padding-right:10rpx;}
+.detail_info{overflow:hidden;}
+/* 客服 */
+.contact_btn{border-radius:50%;width:88rpx;height:88rpx;position:absolute;bottom:22rpx;right:60rpx;}
+.contact_btn image{width:88rpx;height:88rpx;position:absolute;top:0;right:0;bottom:0;left:0;}

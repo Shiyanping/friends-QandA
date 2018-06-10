@@ -1,0 +1,7 @@
+<image class='page_bg' src='/images/bg.png' mode='aspectFill'></image>
+<view class='out'>
+    <view class="out_title">{{curUserIndex+'/10:'+(curTopic.question?curTopic.question:'')}}</view>
+    <!-- out_active -->
+    <view class='out_con second_btn' wx:for="{{curTopic.answer}}" data-question="{{curTopic}}" data-answer="{{item.id}}" wx:key="{{index}}" bindtap='userAnswer'>{{item.value}}</view>
+    <view class='out_btn main_btn' bindtap='changeTopic'>换一题</view>
+</view>

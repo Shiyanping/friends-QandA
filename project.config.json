@@ -1,0 +1,100 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "wx1e169adab712acc4",
+	"libVersion": "2.0.9",
+	"appid": "wx55508ddcd4f28070",
+	"projectname": "friends-QandA",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "出题页面",
+					"pathName": "pages/out/out",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "出题完成页面",
+					"pathName": "pages/outover/outover",
+					"query": "scene=coohua"
+				},
+				{
+					"id": 2,
+					"name": "答题页面",
+					"pathName": "pages/answer/answer",
+					"query": "session_key=3b4ec368b8054d87acd447c063ccd009&record_id=572",
+					"scene": "1012"
+				},
+				{
+					"id": 3,
+					"name": "答题完成页面",
+					"pathName": "pages/answerover/answerover",
+					"query": "list=\"[{\"subjectId\":7,\"question\":\"以下哪句话最能撩到我？\",\"answer\":[{\"id\":24,\"value\":\"“如果你前任和现任同时掉水里，我能做你男/女朋友吗？”\",\"is_right\":0},{\"id\":25,\"value\":\"“可以帮我洗个东西吗？”“洗什么？”“喜欢我。”\",\"is_right\":0},{\"id\":26,\"value\":\"“最近有谣言说我喜欢你，我要澄清一下，这不是谣言。”\",\"is_right\":1},{\"id\":27,\"value\":\"“我想你应该很忙吧，那就只看前三个字就好啦！”\",\"is_right\":0}],\"correct\":null},{\"subjectId\":48,\"question\":\"我是否有前任？\",\"answer\":[{\"id\":167,\"value\":\"有\",\"is_right\":0},{\"id\":168,\"value\":\"没有\",\"is_right\":1},{\"id\":169,\"value\":\"即将有\",\"is_right\":0}],\"correct\":null},{\"subjectId\":42,\"question\":\"如果有1000万我会？\",\"answer\":[{\"id\":144,\"value\":\"环游世界\",\"is_right\":0},{\"id\":145,\"value\":\"买房买车\",\"is_right\":1},{\"id\":146,\"value\":\"给爸妈\",\"is_right\":0},{\"id\":147,\"value\":\"存起来理财\",\"is_right\":0}],\"correct\":null},{\"subjectId\":13,\"question\":\"以下哪个我最可能会尝试？\",\"answer\":[{\"id\":48,\"value\":\"泸州老窖香水\",\"is_right\":0},{\"id\":49,\"value\":\"老干妈唇膏\",\"is_right\":1},{\"id\":50,\"value\":\"崂山白花蛇草水\",\"is_right\":0},{\"id\":51,\"value\":\"还是喝口82年雪碧压压惊吧\",\"is_right\":0}],\"correct\":null},{\"subjectId\":23,\"question\":\"晚上我一般什么时候入睡？\",\"answer\":[{\"id\":84,\"value\":\"困了的时候\",\"is_right\":0},{\"id\":85,\"value\":\"赢了这局游戏就睡\",\"is_right\":1},{\"id\":86,\"value\":\"不喜欢的人发来微信的时候\",\"is_right\":0}],\"correct\":null},{\"subjectId\":55,\"question\":\"遇见喜欢的人，我会怎么做？\",\"answer\":[{\"id\":186,\"value\":\"大胆向前拿联络方式 \",\"is_right\":0},{\"id\":187,\"value\":\"默默关注所有关于ta的状态\",\"is_right\":1},{\"id\":188,\"value\":\"放在心底\",\"is_right\":0}],\"correct\":null},{\"subjectId\":80,\"question\":\"我相信这个世界有纯粹的爱情吗？\",\"answer\":[{\"id\":269,\"value\":\"扯淡吧，男人都是下半身动物\",\"is_right\":0},{\"id\":270,\"value\":\"很多人说，一见钟情的是脸，我认同\",\"is_right\":1},{\"id\":271,\"value\":\"日久生情，时间长了，慢慢产生感情\",\"is_right\":0}],\"correct\":null},{\"subjectId\":87,\"question\":\"我对我身体最满意的地方是？\",\"answer\":[{\"id\":293,\"value\":\"眼睛\",\"is_right\":0},{\"id\":294,\"value\":\"身高\",\"is_right\":0},{\"id\":295,\"value\":\"皮肤\",\"is_right\":1},{\"id\":296,\"value\":\"鼻子\",\"is_right\":0}],\"correct\":null},{\"subjectId\":41,\"question\":\"假期我会为自己安排旅游吗？\",\"answer\":[{\"id\":142,\"value\":\"会\",\"is_right\":0},{\"id\":143,\"value\":\"不会\",\"is_right\":1}],\"correct\":null},{\"subjectId\":28,\"question\":\"微信删除和拉黑我觉得最狠的是？\",\"answer\":[{\"id\":100,\"value\":\"删除\",\"is_right\":0},{\"id\":101,\"value\":\"拉黑\",\"is_right\":1}],\"correct\":null}]\"&record_id=196",
+					"scene": "1012"
+				},
+				{
+					"id": 4,
+					"name": "出题记录",
+					"pathName": "pages/outrecord/outrecord",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "查看题目",
+					"pathName": "pages/outrecord/lookproblem/lookproblem",
+					"query": "",
+					"scene": "1012"
+				},
+				{
+					"id": 6,
+					"name": "答题记录",
+					"pathName": "pages/answerrecord/answerrecord",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "组件库",
+					"pathName": "pages/component/component",
+					"query": "",
+					"scene": "1012"
+				},
+				{
+					"id": -1,
+					"name": "付费详情",
+					"pathName": "pages/index/detail/detail",
+					"query": "",
+					"scene": "1012"
+				}
+			]
+		}
+	}
+}
